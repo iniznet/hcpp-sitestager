@@ -1,0 +1,11 @@
+#!/bin/bash
+export DEBIAN_FRONTEND=noninteractive
+
+# Check and install required dependencies
+if ! command -v rsync &> /dev/null; then
+    echo "rsync not found, installing..."
+    apt-get update
+    apt-get install -y rsync
+fi
+
+echo "hcpp-sitestager plugin installed."

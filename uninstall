@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Executed when plugin is uninstalled
+echo "hcpp-sitestager plugin uninstalled."
